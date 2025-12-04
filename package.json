@@ -1,0 +1,11 @@
+{
+  "name": "merillgames.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/borgsean18/merillgames.github.io",
+  "author": "Sean <seanborg8@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
