@@ -3,21 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merill Games - an indie studio crafting handmade pixel art games.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Merill Games</title>
+    <title>Merill Games | Indie Pixel Art Studio</title>
 </head>
 <body>
-    <section class="sect">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="welcome-box">
-                        <h1>Welcome to Merill Games</h1>
-                        <p>Our website is currently under construction. Please check back soon for updates!</p>
-                    </div>
+    <div class="stars"></div>
+
+    <header class="site-header">
+        <a href="#" class="logo">
+            <span class="logo-mark">M</span>
+            <span class="logo-text">Merill Games</span>
+        </a>
+        <nav class="nav">
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="eyebrow">Indie Pixel Art Studio</p>
+                <h1 class="title">
+                    <span class="title-line">MERILL</span>
+                    <span class="title-line accent">GAMES</span>
+                </h1>
+                <p class="tagline">Handcrafted pixel adventures, one tile at a time.</p>
+                <div class="cta-row">
+                    <a href="#games" class="btn btn-primary">Play Our Games</a>
+                    <a href="#about" class="btn btn-ghost">About Us</a>
                 </div>
             </div>
+
+            <div class="pixel-scene" aria-hidden="true">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="ground"></div>
+                <div class="hero-sprite">
+                    <div class="sprite-shadow"></div>
+                    <div class="sprite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <h2 class="section-title">Our Games</h2>
+            <div class="games-grid">
+                <article class="game-card">
+                    <div class="game-art game-art-gummy" aria-hidden="true">
+                        <div class="gummy"></div>
+                    </div>
+                    <div class="game-body">
+                        <h3>Gummy Revolt</h3>
+                        <p>A sweet little uprising. Lead the gummies to freedom in this bite-sized mobile adventure.</p>
+                        <span class="badge">Available on Mobile</span>
+                    </div>
+                </article>
+
+                <article class="game-card game-card-soon">
+                    <div class="game-art game-art-soon" aria-hidden="true">
+                        <span>?</span>
+                    </div>
+                    <div class="game-body">
+                        <h3>Something New</h3>
+                        <p>We're cooking up our next pixel adventure. Stay tuned for updates.</p>
+                        <span class="badge badge-muted">Coming Soon</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="section section-alt">
+            <div class="about-wrap">
+                <h2 class="section-title">About the Studio</h2>
+                <p>
+                    Merill Games is a tiny indie studio with a love for retro aesthetics and
+                    cozy gameplay. We make small games with big heart — every sprite drawn by
+                    hand, every sound chosen with care.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-wrap">
+                <h2 class="section-title">Get in Touch</h2>
+                <p>Questions, feedback, or just want to say hi?</p>
+                <a class="btn btn-primary" href="mailto:hello@merillgames.com">Email Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Merill Games Ltd. &middot; Made with pixels.</p>
+        <div class="footer-links">
+            <a href="gummyrevolt/privacypolicy.html">Privacy</a>
+            <a href="gummyrevolt/termsandconditions.html">Terms</a>
         </div>
-    </section>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
